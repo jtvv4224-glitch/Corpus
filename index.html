@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Corpus — The Catholic Faith</title>
+  <!-- CONTENT: site description for search engines and link previews -->
+  <meta name="description" content="Corpus is a quiet, beautiful place to learn the Catholic faith — its sacraments, saints, prayer and history.">
+  <meta name="theme-color" content="#0b0806">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Corpus, home">
+        <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg>
+        <span>Corpus</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#faith">Faith</a>
+        <a href="#sacraments">Sacraments</a>
+        <a href="#year">Liturgical Year</a>
+        <a href="#saints">Saints</a>
+        <a href="#prayer">Prayer</a>
+        <a href="#history">History</a>
+      </nav>
+      <span class="season-pill" data-season-name>Ordinary Time</span>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" data-menu>
+    <nav aria-label="Mobile">
+      <ol>
+        <li style="--i:0"><a href="#faith"><small>I</small>Faith</a></li>
+        <li style="--i:1"><a href="#sacraments"><small>II</small>Sacraments</a></li>
+        <li style="--i:2"><a href="#year"><small>III</small>Liturgical Year</a></li>
+        <li style="--i:3"><a href="#saints"><small>IV</small>Saints</a></li>
+        <li style="--i:4"><a href="#prayer"><small>V</small>Prayer</a></li>
+        <li style="--i:5"><a href="#history"><small>VI</small>History</a></li>
+      </ol>
+    </nav>
+    <span class="season-pill" data-season-name>Ordinary Time</span>
+  </div>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero wood" id="top" aria-labelledby="hero-title" data-hero>
+      <div class="hero__light" aria-hidden="true"></div>
+      <canvas class="hero__motes" aria-hidden="true" data-motes></canvas>
+      <div class="hero__rose" aria-hidden="true">
+        <div class="hero__cloth"></div>
+        <div class="hero__glow"></div>
+        <img src="assets/img/rose-window.svg" alt="" width="1000" height="1000" decoding="async" fetchpriority="high">
+        <div class="hero__shade"></div>
+      </div>
+
+      <p class="label corner--tl"><span>The Catholic</span><strong>Faith</strong></p>
+      <p class="label label--end corner--tr"><span data-season-latin>Tempus per annum</span><strong data-season-name>Ordinary Time</strong></p>
+
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">Corpus</h1>
+        <p class="hero__sub tracked">Christi</p>
+        <!-- CONTENT: one or two sentences introducing the site -->
+        <p class="hero__lede">A quiet place to learn the Catholic faith, its sacraments, saints, prayer and two thousand years of history.</p>
+      </div>
+
+      <!-- CONTENT: a short verse or quotation -->
+      <blockquote class="hero__verse">
+        <p>“I am the bread of life; whoever comes to me will never hunger.”</p>
+        <cite>John 6:35</cite>
+      </blockquote>
+
+      <!-- CONTENT: your name / parish / city -->
+      <p class="label corner--bl"><span>Curated by:</span><strong>Your Name</strong></p>
+      <p class="label label--end corner--br"><span>Anno Domini</span><strong data-roman-year>MMXXVI</strong></p>
+    </section>
+
+    <!-- ============================ STATEMENT ============================ -->
+    <section class="statement" id="statement" aria-label="Introduction">
+      <div class="wrap">
+        <div class="ornament" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg></div>
+        <!-- CONTENT: the site's opening statement (lights up word by word as you scroll) -->
+        <p class="statement__text" data-words>For two thousand years the Church has told one story, in stone and glass, in chant and silence, in bread broken and shared. <em>This is a place to listen.</em></p>
+      </div>
+    </section>
+
+    <div class="frieze" aria-hidden="true">
+      <div class="frieze__track">
+        <span>Credo in unum Deum ✠ Patrem omnipotentem ✠ factorem cæli et terræ ✠ visibilium omnium et invisibilium ✠</span>
+        <span>Credo in unum Deum ✠ Patrem omnipotentem ✠ factorem cæli et terræ ✠ visibilium omnium et invisibilium ✠</span>
+      </div>
+    </div>
+
+    <!-- ============================ THE FAITH ============================ -->
+    <section class="section chapters" id="faith" aria-labelledby="faith-title">
+      <div class="wrap">
+        <div class="section__meta">
+          <p class="label"><span>Part</span><strong>One</strong></p>
+          <p class="label label--end"><span>Six</span><strong>Chapters</strong></p>
+        </div>
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="faith-title" data-reveal>The Faith</h2>
+            <p class="section__sub tracked" data-reveal style="--d:1">Fides</p>
+          </div>
+          <!-- CONTENT: section introduction -->
+          <p class="section__lede" data-reveal style="--d:2">Six chapters on the heart of Catholic belief. Each opens into a full page. Content coming soon.</p>
+        </div>
+
+        <!-- CONTENT: one card per chapter. Duplicate chapter.html for each and update the links. -->
+        <ul class="chapters__grid">
+          <li data-reveal>
+            <a class="arch-card" href="chapter.html" style="--c: var(--gold)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">I</span>
+                <span class="arch-card__latin tracked">Credo</span>
+                <h3>The Creed</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+          <li data-reveal style="--d:1">
+            <a class="arch-card" href="chapter.html" style="--c: var(--ruby)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">II</span>
+                <span class="arch-card__latin tracked">Sacramenta</span>
+                <h3>The Sacraments</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+          <li data-reveal style="--d:2">
+            <a class="arch-card" href="chapter.html" style="--c: var(--emerald)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">III</span>
+                <span class="arch-card__latin tracked">Sancta Missa</span>
+                <h3>The Holy Mass</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+          <li data-reveal>
+            <a class="arch-card" href="chapter.html" style="--c: var(--cobalt)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">IV</span>
+                <span class="arch-card__latin tracked">Sacra Scriptura</span>
+                <h3>Sacred Scripture</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+          <li data-reveal style="--d:1">
+            <a class="arch-card" href="chapter.html" style="--c: var(--pearl)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">V</span>
+                <span class="arch-card__latin tracked">Beata Maria</span>
+                <h3>The Blessed Virgin Mary</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+          <li data-reveal style="--d:2">
+            <a class="arch-card" href="chapter.html" style="--c: var(--violet)">
+              <div class="arch-card__inner">
+                <span class="arch-card__num gold-text">VI</span>
+                <span class="arch-card__latin tracked">Ecclesia</span>
+                <h3>The Church</h3>
+                <p>Short description of this chapter goes here.</p>
+                <span class="link-arrow">Read chapter</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ SACRAMENTS ============================ -->
+    <section class="section sacraments" id="sacraments" aria-labelledby="sacraments-title">
+      <div class="wrap">
+        <div class="section__meta">
+          <p class="label"><span>Part</span><strong>Two</strong></p>
+          <p class="label label--end"><span>Septem</span><strong>Sacramenta</strong></p>
+        </div>
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="sacraments-title" data-reveal>The Seven Sacraments</h2>
+            <p class="section__sub tracked" data-reveal style="--d:1">Signa gratiæ</p>
+          </div>
+          <!-- CONTENT: section introduction -->
+          <p class="section__lede" data-reveal style="--d:2">Sacraments of initiation, of healing, and of service. Swipe or use the arrows to walk through all seven.</p>
+        </div>
+      </div>
+
+      <div class="carousel" data-carousel>
+        <!-- CONTENT: replace each .sac__text with your own description -->
+        <ul class="carousel__track" data-carousel-track aria-label="The seven sacraments">
+          <li class="sac" style="--c: var(--cobalt)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><path d="M24 40 8.4 21.5a18 18 0 0 1 31.2 0Z"/><path d="M24 40 15 15.1M24 40V12.7M24 40l9-24.9M20 40h8"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Initiation · I</p>
+            <h3>Baptism</h3>
+            <p class="sac__latin tracked">Baptismus</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: var(--ruby)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><path d="M24 6c1.5 6.5 10 10.5 10 20a10 10 0 0 1-20 0c0-5 2.5-8 5-10.5.5 4 2 6 4.5 6.5-1.5-5.5-.5-11 .5-16Z"/><path d="M24 38a4 4 0 0 1-4-4c0-3 4-6 4-6s4 3 4 6a4 4 0 0 1-4 4Z"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Initiation · II</p>
+            <h3>Confirmation</h3>
+            <p class="sac__latin tracked">Confirmatio</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: #d8952e">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="10" r="5"/><path d="M24 7.5v5M21.5 10h5M14 19h20c0 8-4.5 13-10 13s-10-5-10-13ZM24 32v8M17 41h14"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Initiation · III</p>
+            <h3>Eucharist</h3>
+            <p class="sac__latin tracked">Eucharistia</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: var(--violet)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><circle cx="13" cy="13" r="4.5"/><circle cx="35" cy="13" r="4.5"/><path d="m16.2 16.2 20 20M31 31l3-3M34.5 34.5l3-3M31.8 16.2l-20 20M17 31l-3-3M13.5 34.5l-3-3"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Healing · IV</p>
+            <h3>Penance</h3>
+            <p class="sac__latin tracked">Pænitentia</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: var(--emerald)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><path d="M24 6s-11 12.5-11 21a11 11 0 0 0 22 0C35 18.5 24 6 24 6Z"/><path d="M24 21v12M19 26h10"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Healing · V</p>
+            <h3>Anointing of the Sick</h3>
+            <p class="sac__latin tracked">Unctio infirmorum</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: var(--ruby)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><path d="M17 7c1 4 3.5 6.5 7 6.5s6-2.5 7-6.5M17 7l-2.5 34h6L23 13.4M31 7l2.5 34h-6L25 13.4M17.5 32v5M15.2 34.5h4.6M30.5 32v5M28.2 34.5h4.6"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Service · VI</p>
+            <h3>Holy Orders</h3>
+            <p class="sac__latin tracked">Ordo</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+          <li class="sac" style="--c: var(--gold)">
+            <div class="sac__art" aria-hidden="true">
+              <span class="sac__icon"><svg viewBox="0 0 48 48"><circle cx="19" cy="27" r="9"/><circle cx="29" cy="27" r="9"/><path d="M24 9v6M21 12h6"/></svg></span>
+            </div>
+            <p class="sac__group eyebrow">Service · VII</p>
+            <h3>Matrimony</h3>
+            <p class="sac__latin tracked">Matrimonium</p>
+            <p class="sac__text">Short description goes here.</p>
+          </li>
+        </ul>
+
+        <div class="wrap carousel__controls">
+          <button class="icon-btn" type="button" data-carousel-prev aria-label="Previous sacrament">
+            <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-carousel-next aria-label="Next sacrament">
+            <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= LITURGICAL YEAR ========================= -->
+    <!-- Sticky scroll story: each season takes over the screen in turn.
+         The season we are in today is marked automatically by main.js. -->
+    <section class="year" id="year" aria-labelledby="year-title" data-year>
+      <div class="year__stage">
+        <div class="year__glow" aria-hidden="true"></div>
+        <svg class="year__wheel" viewBox="0 0 100 100" aria-hidden="true" data-wheel>
+          <circle class="ring" cx="50" cy="50" r="49"/>
+          <circle class="ring" cx="50" cy="50" r="43"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--violet)" stroke-dasharray="46.97 242.06" transform="rotate(0 50 50)"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--gold-light)" stroke-dasharray="46.97 242.06" transform="rotate(60 50 50)"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--violet)" stroke-dasharray="46.97 242.06" transform="rotate(120 50 50)"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--ruby)" stroke-dasharray="46.97 242.06" transform="rotate(180 50 50)"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--gold-light)" stroke-dasharray="46.97 242.06" transform="rotate(240 50 50)"/>
+          <circle cx="50" cy="50" r="46" stroke="var(--emerald)" stroke-dasharray="46.97 242.06" transform="rotate(300 50 50)"/>
+        </svg>
+
+        <div class="year__head">
+          <h2 class="label" id="year-title"><span>Part Three</span><strong>The Liturgical Year</strong></h2>
+          <p class="label label--end"><span>Annus</span><strong>Liturgicus</strong></p>
+        </div>
+
+        <!-- CONTENT: replace each .season__text with your own description -->
+        <ol class="year__seasons">
+          <li class="season" data-season-key="advent" data-color="violet" style="--c: var(--violet)">
+            <p class="season__count">01 / 06</p>
+            <h3 class="season__name">Advent</h3>
+            <p class="season__latin tracked">Tempus Adventus</p>
+            <p class="season__color">Violet</p>
+            <p class="season__text">Four Sundays of watchful waiting before Christmas.</p>
+            <p class="season__now">We are here</p>
+          </li>
+          <li class="season" data-season-key="christmas" data-color="gold-light" style="--c: var(--gold-light)">
+            <p class="season__count">02 / 06</p>
+            <h3 class="season__name">Christmas</h3>
+            <p class="season__latin tracked">Tempus Nativitatis</p>
+            <p class="season__color">White &amp; gold</p>
+            <p class="season__text">From the Nativity of the Lord to the Baptism of the Lord.</p>
+            <p class="season__now">We are here</p>
+          </li>
+          <li class="season" data-season-key="lent" data-color="violet" style="--c: var(--violet)">
+            <p class="season__count">03 / 06</p>
+            <h3 class="season__name">Lent</h3>
+            <p class="season__latin tracked">Tempus Quadragesimæ</p>
+            <p class="season__color">Violet</p>
+            <p class="season__text">Forty days of prayer, fasting and almsgiving.</p>
+            <p class="season__now">We are here</p>
+          </li>
+          <li class="season" data-season-key="triduum" data-color="ruby" style="--c: var(--ruby)">
+            <p class="season__count">04 / 06</p>
+            <h3 class="season__name">Paschal Triduum</h3>
+            <p class="season__latin tracked">Triduum Paschale</p>
+            <p class="season__color">White · Red · White</p>
+            <p class="season__text">From the evening of Holy Thursday to Easter Sunday, the summit of the year.</p>
+            <p class="season__now">We are here</p>
+          </li>
+          <li class="season" data-season-key="easter" data-color="gold-light" style="--c: var(--gold-light)">
+            <p class="season__count">05 / 06</p>
+            <h3 class="season__name">Easter</h3>
+            <p class="season__latin tracked">Tempus Paschale</p>
+            <p class="season__color">White &amp; gold</p>
+            <p class="season__text">Fifty days of rejoicing, ending at Pentecost.</p>
+            <p class="season__now">We are here</p>
+          </li>
+          <li class="season" data-season-key="ordinary" data-color="emerald" style="--c: var(--emerald)">
+            <p class="season__count">06 / 06</p>
+            <h3 class="season__name">Ordinary Time</h3>
+            <p class="season__latin tracked">Tempus per annum</p>
+            <p class="season__color">Green</p>
+            <p class="season__text">The counted weeks between the great seasons, spent with the life and teaching of Christ.</p>
+            <p class="season__now">We are here</p>
+          </li>
+        </ol>
+
+        <div class="year__progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============================== SAINTS ============================== -->
+    <section class="section saints" id="saints" aria-labelledby="saints-title">
+      <div class="wrap">
+        <div class="section__meta">
+          <p class="label"><span>Part</span><strong>Four</strong></p>
+          <p class="label label--end"><span>Communio</span><strong>Sanctorum</strong></p>
+        </div>
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="saints-title" data-reveal>The Saints</h2>
+            <p class="section__sub tracked" data-reveal style="--d:1">A great cloud of witnesses</p>
+          </div>
+          <!-- CONTENT: section introduction -->
+          <p class="section__lede" data-reveal style="--d:2">Men and women who lived the faith heroically. Portraits and stories to come.</p>
+        </div>
+
+        <!-- CONTENT: swap .saint__nimbus for an <img> once you have portraits -->
+        <ul class="saints__grid">
+          <li class="saint" data-reveal>
+            <div class="saint__frame" style="--c: #8a6a32" aria-hidden="true"><span class="saint__nimbus">F</span></div>
+            <p class="eyebrow">Feast · 4 October</p>
+            <h3 class="saint__name">St. Francis of Assisi</h3>
+            <p class="saint__meta">c. 1181 – 1226</p>
+          </li>
+          <li class="saint" data-reveal style="--d:1">
+            <div class="saint__frame" style="--c: var(--rose)" aria-hidden="true"><span class="saint__nimbus">T</span></div>
+            <p class="eyebrow">Feast · 1 October</p>
+            <h3 class="saint__name">St. Thérèse of Lisieux</h3>
+            <p class="saint__meta">1873 – 1897</p>
+          </li>
+          <li class="saint" data-reveal style="--d:2">
+            <div class="saint__frame" style="--c: var(--ruby)" aria-hidden="true"><span class="saint__nimbus">A</span></div>
+            <p class="eyebrow">Feast · 28 August</p>
+            <h3 class="saint__name">St. Augustine of Hippo</h3>
+            <p class="saint__meta">354 – 430</p>
+          </li>
+          <li class="saint" data-reveal style="--d:3">
+            <div class="saint__frame" style="--c: var(--cobalt)" aria-hidden="true"><span class="saint__nimbus">J</span></div>
+            <p class="eyebrow">Feast · 30 May</p>
+            <h3 class="saint__name">St. Joan of Arc</h3>
+            <p class="saint__meta">c. 1412 – 1431</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== PRAYER ============================== -->
+    <section class="section prayer" id="prayer" aria-labelledby="prayer-title">
+      <div class="wrap">
+        <div class="section__meta">
+          <p class="label"><span>Part</span><strong>Five</strong></p>
+          <p class="label label--end"><span>Oratio</span><strong>Prayer</strong></p>
+        </div>
+
+        <div class="candle" aria-hidden="true">
+          <span class="candle__glow"></span>
+          <span class="candle__body"></span>
+          <span class="candle__wick"></span>
+          <span class="candle__flame"></span>
+        </div>
+
+        <h2 class="eyebrow" id="prayer-title">Gloria Patri</h2>
+
+        <div class="seg" role="group" aria-label="Language" data-lang-toggle data-active="la">
+          <button type="button" data-lang="la" aria-pressed="true">Latin</button>
+          <button type="button" data-lang="en" aria-pressed="false">English</button>
+        </div>
+
+        <!-- CONTENT: swap in any prayer; keep one blockquote per language -->
+        <blockquote class="prayer__text" lang="la" data-lang-panel="la">
+          Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc et semper, et in sæcula sæculorum. Amen.
+        </blockquote>
+        <blockquote class="prayer__text" lang="en" data-lang-panel="en" hidden>
+          Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.
+        </blockquote>
+        <p class="prayer__source">The Doxology</p>
+      </div>
+    </section>
+
+    <!-- ============================== HISTORY ============================== -->
+    <section class="section history" id="history" aria-labelledby="history-title">
+      <div class="wrap">
+        <div class="section__meta">
+          <p class="label"><span>Part</span><strong>Six</strong></p>
+          <p class="label label--end"><span>Anno Domini</span><strong>33 – Today</strong></p>
+        </div>
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="history-title" data-reveal>Two Thousand Years</h2>
+            <p class="section__sub tracked" data-reveal style="--d:1">Historia Ecclesiæ</p>
+          </div>
+          <!-- CONTENT: section introduction -->
+          <p class="section__lede" data-reveal style="--d:2">Turning points in the life of the Church. Each will open into its own story.</p>
+        </div>
+
+        <!-- CONTENT: add, remove or reorder milestones; each .timeline__text is a placeholder -->
+        <ol class="timeline">
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">c. 33</p>
+            <div>
+              <h3 class="timeline__title">Pentecost</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about Pentecost"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">313</p>
+            <div>
+              <h3 class="timeline__title">Edict of Milan</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about the Edict of Milan"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">325</p>
+            <div>
+              <h3 class="timeline__title">Council of Nicaea</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about the Council of Nicaea"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">1054</p>
+            <div>
+              <h3 class="timeline__title">The East–West Schism</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about the East–West Schism"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">1545</p>
+            <div>
+              <h3 class="timeline__title">Council of Trent</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about the Council of Trent"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <p class="timeline__year gold-text">1962</p>
+            <div>
+              <h3 class="timeline__title">Second Vatican Council</h3>
+              <p class="timeline__text">Short description of this moment goes here.</p>
+            </div>
+            <a class="icon-btn" href="chapter.html" aria-label="Read about the Second Vatican Council"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer wood">
+    <div class="wrap">
+      <p class="footer__motto" data-reveal>Ad Maiorem<br>Dei Gloriam</p>
+      <p class="footer__motto-sub tracked" data-reveal style="--d:1">For the greater glory of God</p>
+
+      <div class="footer__grid">
+        <div>
+          <a class="nav__brand" href="#top">
+            <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg>
+            <span>Corpus</span>
+          </a>
+          <!-- CONTENT: one line about the site -->
+          <p class="footer__about">A short line about who made this site and why.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#faith">The Faith</a></li>
+            <li><a href="#sacraments">Sacraments</a></li>
+            <li><a href="#year">Liturgical Year</a></li>
+            <li><a href="#saints">Saints</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Pray</h3>
+          <ul>
+            <li><a href="#prayer">Prayers</a></li>
+            <li><a href="#">Daily Readings</a></li>
+            <li><a href="#">Find a Mass</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <p class="label"><span>Curated by:</span><strong>Your Name</strong></p>
+        <p class="footer__legal">© <span data-year-now>2026</span> Corpus</p>
+        <p class="label label--end"><span>City,</span><strong>Country</strong></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

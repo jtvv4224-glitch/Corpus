@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- TEMPLATE: duplicate this file for each chapter (e.g. creed.html, sacraments.html)
+       and replace every CONTENT placeholder below. -->
+  <title>Chapter Title — Corpus</title>
+  <meta name="description" content="Chapter summary for search engines and link previews.">
+  <meta name="theme-color" content="#0b0806">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Corpus, home">
+        <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg>
+        <span>Corpus</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#faith" aria-current="page">Faith</a>
+        <a href="index.html#sacraments">Sacraments</a>
+        <a href="index.html#year">Liturgical Year</a>
+        <a href="index.html#saints">Saints</a>
+        <a href="index.html#prayer">Prayer</a>
+        <a href="index.html#history">History</a>
+      </nav>
+      <span class="season-pill" data-season-name>Ordinary Time</span>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" data-menu>
+    <nav aria-label="Mobile">
+      <ol>
+        <li style="--i:0"><a href="index.html#faith"><small>I</small>Faith</a></li>
+        <li style="--i:1"><a href="index.html#sacraments"><small>II</small>Sacraments</a></li>
+        <li style="--i:2"><a href="index.html#year"><small>III</small>Liturgical Year</a></li>
+        <li style="--i:3"><a href="index.html#saints"><small>IV</small>Saints</a></li>
+        <li style="--i:4"><a href="index.html#prayer"><small>V</small>Prayer</a></li>
+        <li style="--i:5"><a href="index.html#history"><small>VI</small>History</a></li>
+      </ol>
+    </nav>
+    <span class="season-pill" data-season-name>Ordinary Time</span>
+  </div>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <header class="page-hero wood">
+      <!-- CONTENT: chapter number and Latin name -->
+      <p class="label corner--tl"><span>Chapter</span><strong>II</strong></p>
+      <p class="label label--end corner--tr"><span>Sacramenta</span><strong>The Faith</strong></p>
+
+      <div class="page-hero__copy">
+        <!-- CONTENT: title, Latin subtitle and a one-sentence summary -->
+        <h1 class="page-hero__title">Chapter Title</h1>
+        <p class="page-hero__sub tracked">Subtitulus</p>
+        <p class="page-hero__lede">A one or two sentence summary of this chapter. It sets the tone for everything below.</p>
+        <div class="page-hero__meta">
+          <span>8 min read</span>
+          <span>Updated <span data-year-now>2026</span></span>
+        </div>
+      </div>
+
+      <!-- CONTENT: replace with a photograph if you like, e.g.
+           <img class="page-hero__window" src="…" alt="…"> -->
+      <div class="page-hero__window" aria-hidden="true"></div>
+
+      <p class="label corner--bl"><span>Written by:</span><strong>Your Name</strong></p>
+      <p class="label label--end corner--br"><span>Part</span><strong>One</strong></p>
+    </header>
+
+    <!-- ============================== ARTICLE ============================== -->
+    <div class="article wrap">
+      <!-- CONTENT: keep these links in sync with the h2 ids below -->
+      <aside class="toc" data-toc>
+        <p class="eyebrow">On this page</p>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#section-one">Section one</a></li>
+          <li><a href="#section-two">Section two</a></li>
+          <li><a href="#section-three">Section three</a></li>
+        </ol>
+      </aside>
+
+      <article class="prose">
+        <!-- CONTENT: the chapter body. Headings, paragraphs, lists, quotes and figures are all styled. -->
+        <p class="dropcap" id="introduction">This is placeholder text for the opening of the chapter. The first letter becomes an illuminated drop cap, as in a manuscript. Replace these paragraphs with your own writing when it is ready.</p>
+        <p>A second paragraph continues the introduction. Body text is set in a clean sans-serif for comfortable reading, while headings use the same serif as the rest of the site.</p>
+
+        <h2 id="section-one"><span class="eyebrow">I</span>First section heading</h2>
+        <p>Placeholder paragraph for the first section. Use <strong>bold</strong> for key terms and <a href="#">links</a> for references to other chapters.</p>
+        <ul>
+          <li>A list item for a key point</li>
+          <li>Another key point</li>
+          <li>A third key point</li>
+        </ul>
+
+        <div class="verse">
+          <p>Placeholder for a passage of Scripture or a quotation from the Catechism.</p>
+          <cite>Book 0:0</cite>
+        </div>
+
+        <h2 id="section-two"><span class="eyebrow">II</span>Second section heading</h2>
+        <p>Placeholder paragraph for the second section. Pull quotes break up long passages and give the page a rhythm.</p>
+
+        <blockquote class="pull">
+          “A memorable line from this chapter, set large.”
+          <div class="ornament" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg></div>
+        </blockquote>
+
+        <p>More placeholder text after the pull quote.</p>
+
+        <figure class="figure">
+          <div class="ph"><span class="ph__tag">Image · 16:10</span></div>
+          <figcaption>Caption describing the image.</figcaption>
+        </figure>
+
+        <h2 id="section-three"><span class="eyebrow">III</span>Third section heading</h2>
+        <p>Placeholder paragraph for the closing section.</p>
+        <ol>
+          <li>A numbered step or teaching</li>
+          <li>Another numbered item</li>
+        </ol>
+      </article>
+    </div>
+
+    <!-- CONTENT: link to the neighbouring chapters -->
+    <nav class="pager" aria-label="Chapters">
+      <a href="index.html#faith">
+        <span class="eyebrow">Previous</span>
+        <strong>I · The Creed</strong>
+      </a>
+      <a href="index.html#faith">
+        <span class="eyebrow">Next</span>
+        <strong>III · The Holy Mass</strong>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer wood">
+    <div class="wrap">
+      <p class="footer__motto" data-reveal>Ad Maiorem<br>Dei Gloriam</p>
+      <p class="footer__motto-sub tracked" data-reveal style="--d:1">For the greater glory of God</p>
+
+      <div class="footer__grid">
+        <div>
+          <a class="nav__brand" href="index.html">
+            <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.75 1h2.5v5.75H19v2.5h-5.75V23h-2.5V9.25H5v-2.5h5.75z"/></svg>
+            <span>Corpus</span>
+          </a>
+          <p class="footer__about">A short line about who made this site and why.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#faith">The Faith</a></li>
+            <li><a href="index.html#sacraments">Sacraments</a></li>
+            <li><a href="index.html#year">Liturgical Year</a></li>
+            <li><a href="index.html#saints">Saints</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Pray</h3>
+          <ul>
+            <li><a href="index.html#prayer">Prayers</a></li>
+            <li><a href="#">Daily Readings</a></li>
+            <li><a href="#">Find a Mass</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <p class="label"><span>Curated by:</span><strong>Your Name</strong></p>
+        <p class="footer__legal">© <span data-year-now>2026</span> Corpus</p>
+        <p class="label label--end"><span>City,</span><strong>Country</strong></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
