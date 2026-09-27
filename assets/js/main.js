@@ -81,6 +81,65 @@
   $$(`[data-season-key="${seasonKey}"]`).forEach((el) => el.classList.add('is-now'));
 
   /* ------------------------------------------------------------------
+     Opening animation: gold dot field behind the glowing word.
+     The inline script in <head> decides whether it plays (intro-active).
+     ------------------------------------------------------------------ */
+
+  const intro = $('[data-intro]');
+  if (intro && !root.classList.contains('intro-active')) {
+    intro.remove();
+  } else if (intro) {
+    const LEAVE_ON = ['pointerdown', 'keydown', 'wheel', 'touchmove'];
+    let stopDots = null;
+    let finished = false;
+
+    import('./intro-dots.js')
+      .then(({ startDots }) => {
+        if (finished) return;
+        const el = $('[data-intro-dots]', intro);
+        stopDots = startDots(el, { color: 0xf3e3bb, background: 0x0b0806 });
+        requestAnimationFrame(() => el.classList.add('is-ready'));
+        watchFrameRate(el);
+      })
+      .catch(() => { /* no WebGL or the CDN is unreachable: the gold word still plays */ });
+
+    // On a device too slow to render the field smoothly, drop it; the word carries on.
+    function watchFrameRate(el) {
+      let last = performance.now();
+      let slow = 0;
+      const tick = (now) => {
+        if (finished || !stopDots) return;
+        slow = now - last > 120 ? slow + 1 : 0;
+        last = now;
+        if (slow >= 3) {
+          stopDots();
+          stopDots = null;
+          el.classList.remove('is-ready');
+          return;
+        }
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+
+    const leave = () => {
+      // Skip early, unless the overlay is already fading out on its own.
+      if (parseFloat(getComputedStyle(intro).opacity) < 1) return;
+      intro.classList.add('is-leaving');
+    };
+    LEAVE_ON.forEach((type) => window.addEventListener(type, leave, { passive: true }));
+
+    intro.addEventListener('animationend', (e) => {
+      if (e.target !== intro || e.animationName !== 'intro-out') return;
+      finished = true;
+      stopDots?.();
+      LEAVE_ON.forEach((type) => window.removeEventListener(type, leave));
+      intro.remove();
+      root.classList.remove('intro-active');
+    });
+  }
+
+  /* ------------------------------------------------------------------
      Navigation
      ------------------------------------------------------------------ */
 

@@ -12,10 +12,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script>
+    (function (html) {
+      html.classList.remove('no-js');
+      html.classList.add('js');
+      // Opening animation: once per visit, never on deep links or with reduced motion.
+      try {
+        if (location.hash || sessionStorage.getItem('corpus-intro') || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        sessionStorage.setItem('corpus-intro', '1');
+      } catch (e) {}
+      html.classList.add('intro-active');
+    })(document.documentElement);
+  </script>
+  <!-- three.js for the opening animation's dot field (loaded only when it plays) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+      }
+    }
+  </script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <!-- ========================= OPENING ANIMATION ========================= -->
+  <!-- Pulsing gold dot field (assets/js/intro-dots.js) behind a glowing "Corpus".
+       Fades out on its own after ~3.5s, or on the first click, key or scroll. -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__dots" data-intro-dots></div>
+    <div class="intro__mark">
+      <p class="intro__word">Corpus</p>
+    </div>
+  </div>
+
   <a class="skip" href="#main">Skip to content</a>
 
   <!-- ============================== NAV ============================== -->
